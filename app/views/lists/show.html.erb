@@ -1,0 +1,11 @@
+<h1><%=@list.name %></h1>
+<br />
+
+<%= link_to 'Edit', edit_list_path(@list) %>
+
+<%= link_to 'Delete', list_path(@list), method: :delete %>
+
+<%= link_to 'All Lists', lists_path %>
+<%= link_to 'New Item', items_path %>
+
+<!-- add a nav bar for edit, delete, back to lists -->

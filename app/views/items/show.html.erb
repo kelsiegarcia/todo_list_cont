@@ -1,0 +1,12 @@
+<h1><%=@item.name %></h1>
+<br />
+<%= link_to 'Edit', edit_item_path(@item) %>
+
+<%= link_to 'Delete', item_path(@item), method: :delete %>
+
+<%= link_to 'All Item', items_path %>
+
+
+<!-- add a nav bar for edit, delete, back to items -->
+
+

@@ -1,0 +1,19 @@
+<h1>All Items</h1>
+<br />
+
+<% if @items.any? %>
+
+<ul>
+	<% @items.each do |item| %>
+	<li>
+	<%= link_to item.name, item_path(item)%>
+	</li>
+	<% end %>
+</ul>
+<% else %>
+		<h3>No items! Create one!</h3>
+<% end %>
+
+
+
+<%= link_to 'New Item', new_item_path %>
